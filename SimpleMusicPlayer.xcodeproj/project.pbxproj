@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		4728A18020D3BBFE001D68A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4728A17F20D3BBFE001D68A5 /* AppDelegate.swift */; };
-		4728A18220D3BBFE001D68A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4728A18120D3BBFE001D68A5 /* ViewController.swift */; };
+		4728A18220D3BBFE001D68A5 /* MusicPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4728A18120D3BBFE001D68A5 /* MusicPlayerViewController.swift */; };
 		4728A18520D3BBFE001D68A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4728A18320D3BBFE001D68A5 /* Main.storyboard */; };
 		4728A18720D3BC00001D68A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4728A18620D3BC00001D68A5 /* Assets.xcassets */; };
 		4728A18A20D3BC00001D68A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4728A18820D3BC00001D68A5 /* LaunchScreen.storyboard */; };
+		4789662020D3C64200349741 /* Nightingale.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4789661F20D3C64200349741 /* Nightingale.mp3 */; };
+		4789662220D3D94B00349741 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789662120D3D94B00349741 /* AppConstants.swift */; };
+		B620953E0DDA97372F522778 /* Pods_SimpleMusicPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FC2439A1A5FAFA4D5C9783D /* Pods_SimpleMusicPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4728A17C20D3BBFE001D68A5 /* SimpleMusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4728A17F20D3BBFE001D68A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4728A18120D3BBFE001D68A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4728A18120D3BBFE001D68A5 /* MusicPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewController.swift; sourceTree = "<group>"; };
 		4728A18420D3BBFE001D68A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4728A18620D3BC00001D68A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4728A18920D3BC00001D68A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4728A18B20D3BC00001D68A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4789661F20D3C64200349741 /* Nightingale.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Nightingale.mp3; sourceTree = "<group>"; };
+		4789662120D3D94B00349741 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		4FC2439A1A5FAFA4D5C9783D /* Pods_SimpleMusicPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleMusicPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8687BD36A520C858519431B /* Pods-SimpleMusicPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMusicPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleMusicPlayer/Pods-SimpleMusicPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		BA7A79D33BAB17CCA5FE15AA /* Pods-SimpleMusicPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMusicPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleMusicPlayer/Pods-SimpleMusicPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B620953E0DDA97372F522778 /* Pods_SimpleMusicPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		291528BC71FC84BB70DDC514 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FC2439A1A5FAFA4D5C9783D /* Pods_SimpleMusicPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4728A17320D3BBFE001D68A5 = {
 			isa = PBXGroup;
 			children = (
 				4728A17E20D3BBFE001D68A5 /* SimpleMusicPlayer */,
 				4728A17D20D3BBFE001D68A5 /* Products */,
+				59A3C61B9C28F64B13F0F72E /* Pods */,
+				291528BC71FC84BB70DDC514 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +73,49 @@
 		4728A17E20D3BBFE001D68A5 /* SimpleMusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				4728A17F20D3BBFE001D68A5 /* AppDelegate.swift */,
-				4728A18120D3BBFE001D68A5 /* ViewController.swift */,
-				4728A18320D3BBFE001D68A5 /* Main.storyboard */,
+				4789662320D3D95200349741 /* ViewControllers */,
+				4789662420D3D96000349741 /* Resources */,
+				4789661D20D3C5FE00349741 /* Music */,
 				4728A18620D3BC00001D68A5 /* Assets.xcassets */,
-				4728A18820D3BC00001D68A5 /* LaunchScreen.storyboard */,
 				4728A18B20D3BC00001D68A5 /* Info.plist */,
 			);
 			path = SimpleMusicPlayer;
+			sourceTree = "<group>";
+		};
+		4789661D20D3C5FE00349741 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				4789661F20D3C64200349741 /* Nightingale.mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		4789662320D3D95200349741 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4728A18120D3BBFE001D68A5 /* MusicPlayerViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4789662420D3D96000349741 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4728A17F20D3BBFE001D68A5 /* AppDelegate.swift */,
+				4789662120D3D94B00349741 /* AppConstants.swift */,
+				4728A18320D3BBFE001D68A5 /* Main.storyboard */,
+				4728A18820D3BC00001D68A5 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		59A3C61B9C28F64B13F0F72E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA7A79D33BAB17CCA5FE15AA /* Pods-SimpleMusicPlayer.debug.xcconfig */,
+				A8687BD36A520C858519431B /* Pods-SimpleMusicPlayer.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +125,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4728A18E20D3BC00001D68A5 /* Build configuration list for PBXNativeTarget "SimpleMusicPlayer" */;
 			buildPhases = (
+				AF93649C2E82C8C86BDADF83 /* [CP] Check Pods Manifest.lock */,
 				4728A17820D3BBFE001D68A5 /* Sources */,
 				4728A17920D3BBFE001D68A5 /* Frameworks */,
 				4728A17A20D3BBFE001D68A5 /* Resources */,
+				678EBAB7C691FAE913FDDEC8 /* [CP] Embed Pods Frameworks */,
+				BFF0BCF640DE4AF2998AC3E8 /* [CP] Copy Pods Resources */,
+				4789661C20D3C4F900349741 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -96,6 +154,11 @@
 				TargetAttributes = {
 					4728A17B20D3BBFE001D68A5 = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -125,17 +188,83 @@
 				4728A18A20D3BC00001D68A5 /* LaunchScreen.storyboard in Resources */,
 				4728A18720D3BC00001D68A5 /* Assets.xcassets in Resources */,
 				4728A18520D3BBFE001D68A5 /* Main.storyboard in Resources */,
+				4789662020D3C64200349741 /* Nightingale.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4789661C20D3C4F900349741 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		678EBAB7C691FAE913FDDEC8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleMusicPlayer/Pods-SimpleMusicPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF93649C2E82C8C86BDADF83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleMusicPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFF0BCF640DE4AF2998AC3E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleMusicPlayer/Pods-SimpleMusicPlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4728A17820D3BBFE001D68A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4728A18220D3BBFE001D68A5 /* ViewController.swift in Sources */,
+				4728A18220D3BBFE001D68A5 /* MusicPlayerViewController.swift in Sources */,
+				4789662220D3D94B00349741 /* AppConstants.swift in Sources */,
 				4728A18020D3BBFE001D68A5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,11 +407,13 @@
 		};
 		4728A18F20D3BC00001D68A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA7A79D33BAB17CCA5FE15AA /* Pods-SimpleMusicPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R2AYB7993E;
 				INFOPLIST_FILE = SimpleMusicPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,11 +427,13 @@
 		};
 		4728A19020D3BC00001D68A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8687BD36A520C858519431B /* Pods-SimpleMusicPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R2AYB7993E;
 				INFOPLIST_FILE = SimpleMusicPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
