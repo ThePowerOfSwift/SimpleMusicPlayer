@@ -34,14 +34,12 @@ class MusicPlayerViewController: UIViewController {
     // MARK: Actions
 
     @IBAction func playButton(_ sender: UIButton) {
-        musicPlayer.play()
-        statusLabel.text = AppConstants.playText
+        playMusic()
     }
 
     @IBAction func pauseButton(_ sender: UIButton) {
         if musicPlayer.isPlaying {
-            musicPlayer.pause()
-            statusLabel.text = AppConstants.pauseText
+            pauseMusic()
         }
     }
 
@@ -59,6 +57,7 @@ class MusicPlayerViewController: UIViewController {
             musicPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: url!))
         } catch {
             print(error.localizedDescription)
+            // handle error here
         }
         musicPlayer.prepareToPlay()
         songNameLabel.text = AppConstants.musicFileName
@@ -79,14 +78,22 @@ class MusicPlayerViewController: UIViewController {
         commandCenter.playCommand.isEnabled = true
         commandCenter.pauseCommand.isEnabled = true
         commandCenter.playCommand.addTarget { [weak self] (_) -> MPRemoteCommandHandlerStatus in
-            self?.musicPlayer.play()
-            self?.statusLabel.text = AppConstants.playText
+            self?.playMusic()
             return .success
         }
         commandCenter.pauseCommand.addTarget { [weak self] (_) -> MPRemoteCommandHandlerStatus in
-            self?.musicPlayer.pause()
-            self?.statusLabel.text = AppConstants.pauseText
+            self?.pauseMusic()
             return .success
         }
+    }
+
+    func playMusic() {
+        musicPlayer.play()
+        statusLabel.text = AppConstants.playText
+    }
+
+    func pauseMusic() {
+        musicPlayer.pause()
+        statusLabel.text = AppConstants.pauseText
     }
 }
